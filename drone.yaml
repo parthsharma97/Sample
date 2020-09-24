@@ -6,4 +6,4 @@ steps:
   image: plugins/github-release
   commands:
   - echo hello
-  - echo world!
+  - echo world!!
