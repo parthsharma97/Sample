@@ -1,10 +1,9 @@
 kind: pipeline
-type: docker
+type: host
 name: default
 
 steps:
 - name: build
-  image: maven:3.6.3-openjdk-11
   commands:
   - mvn clean install package -Dmaven.test.skip=true -Dpmd.failOnViolation=false
   
