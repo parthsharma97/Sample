@@ -1,9 +1,16 @@
 kind: pipeline
+type: docker
 name: default
 
 steps:
-# - name: publish
-#   image: plugins/github-release
+- name: build
+  image: maven:3.6.3-openjdk-11
   commands:
-  - echo hello
-  - echo worldd
+  - mvn clean install package -Dmaven.test.skip=true -Dpmd.failOnViolation=false
+  
+- name: docker  
+  image: plugins/docker
+  settings:
+    username: parthsharma97
+    password: P@rth123$
+    repo: parthsharma97/droneci
