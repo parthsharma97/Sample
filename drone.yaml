@@ -1,6 +1,6 @@
 kind: pipeline
 name: default
-#Test
+#Testing
 steps:
 - name: build
 #   image: maven:3.6.3-openjdk-11
