@@ -6,8 +6,8 @@ steps:
 #   image: maven:3.6.3-openjdk-11
 # Private repo
   image: parthsharma97/maven
-image_pull_secrets:
-- dockerconfig
+  image_pull_secrets:
+  - dockerconfig
   commands:
   - mvn clean install package -Dmaven.test.skip=true -Dpmd.failOnViolation=false
   
