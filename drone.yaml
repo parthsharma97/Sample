@@ -3,13 +3,14 @@ name: default
 #Test
 steps:
 - name: build
-  image: maven:3.6.3-openjdk-11
+#   image: maven:3.6.3-openjdk-11
+  images: parthsharma97/maven
   commands:
   - mvn clean install package -Dmaven.test.skip=true -Dpmd.failOnViolation=false
   
 - name: docker  
   image: plugins/docker
-  settings:
-    username: parthsharma97
-    password: P@rth123$
-    repo: parthsharma97/droneci
+#   settings:
+#     username: parthsharma97
+#     password: P@rth123$
+#     repo: parthsharma97/droneci
