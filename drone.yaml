@@ -11,9 +11,9 @@ steps:
 image_pull_secrets:
 - dockerconfigjson
   
-- name: docker  
-  image: plugins/docker
-  settings:
-    username: parthsharma97
-    password: P@rth123$
-    repo: parthsharma97/droneci
+# - name: docker  
+#   image: plugins/docker
+#   settings:
+#     username: parthsharma97
+#     password: P@rth123$
+#     repo: parthsharma97/droneci
