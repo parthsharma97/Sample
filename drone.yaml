@@ -15,5 +15,5 @@ steps:
     repo: parthsharma97/droneci
 
 image_pull_secrets:
-- dockerconfigjson # ~/.docker/config.json file value
+- dockerconfigjson # ~/.docker/config.json file auth tag value
  
