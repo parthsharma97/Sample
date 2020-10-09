@@ -6,7 +6,7 @@ steps:
   image: parthsharma97/maven #Docker Private Repo
   commands:
   - mvn clean install package -Dmaven.test.skip=true -Dpmd.failOnViolation=false
-  - mvn deploy
+  - mvn clean deploy package -Dmaven.test.skip=true -Dpmd.failOnViolation=false
 
 - name: docker  
   image: plugins/docker
