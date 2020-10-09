@@ -3,8 +3,8 @@
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0
 	http://maven.apache.org/maven-v4_0_0.xsd">
 	<modelVersion>4.0.0</modelVersion>
-	<groupId>com.mkyong.core.utils</groupId>
-	<artifactId>dateUtils</artifactId>
+	<groupId>com.maventest</groupId>
+	<artifactId>helloworld</artifactId>
 
 	<!-- Output to jar format -->
 	<packaging>jar</packaging>
@@ -86,12 +86,11 @@
 				  <excludes>
 					<exclude>**/log4j.properties</exclude>
 				  </excludes>
-				  <archive>
+<!-- 				  <archive>
 					<manifest>
-						<!-- Jar file entry point -->
 						<mainClass>com.mkyong.core.utils.App</mainClass>
 					</manifest>
-				  </archive>
+				  </archive> -->
 				</configuration>
 			</plugin>
 		</plugins>
