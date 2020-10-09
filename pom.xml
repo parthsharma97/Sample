@@ -31,8 +31,7 @@
         		<name>a0ttkywgye99p-artifactory-primary-0-snapshots</name>
         		<url>https://droneci.jfrog.io/artifactory/maven-local</url>
     		</snapshotRepository>
-	</distributionManagement><dependencies>
-
+	</distributionManagement>
 	<dependencies>
 		<dependency>
 			<groupId>junit</groupId>
